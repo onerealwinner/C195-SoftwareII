@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="516.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.Controllers.CustomersController">
+
+    <TableView fx:id="customerTable" layoutX="15.0" layoutY="52.0" prefHeight="389.0" prefWidth="464.0">
+        <placeholder>
+            <Label text="No customers are in this table - If searching, try modifying or clearing your search" />
+        </placeholder>
+        <columns>
+            <TableColumn fx:id="columnCustomer_Name" prefWidth="100.0" text="%CustomerName" />
+            <TableColumn fx:id="columnPhone" prefWidth="100.0" text="%CustomerPhoneNumber" />
+            <TableColumn fx:id="columnAddress" prefWidth="120.0" text="%CustomerAddress" />
+            <TableColumn fx:id="columnDivision" prefWidth="70.0" text="%Division" />
+            <TableColumn fx:id="columnCountry" prefWidth="70.0" text="%Country" />
+        </columns>
+    </TableView>
+    <Label layoutX="23.0" layoutY="26.0" text="%Customer" />
+    <Button fx:id="addCustomerButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="431.0" layoutY="450.0" mnemonicParsing="false" onAction="#addCustomer_OnAction" text="%Add" textAlignment="RIGHT" />
+    <Button fx:id="deleteCustomerButton" layoutX="247.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteCustomer_OnAction" text="%Delete" />
+    <Button fx:id="modifyCustomerButton" layoutX="342.0" layoutY="450.0" mnemonicParsing="false" onAction="#modifyCustomer_OnAction" text="%Modify" />
+
+    <Button fx:id="cancelButton" layoutX="19.0" layoutY="477.0" mnemonicParsing="false" onAction="#cancel_OnAction" text="%CANCEL" />
+</AnchorPane>

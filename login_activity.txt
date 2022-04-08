@@ -1,0 +1,38 @@
+May 10, 2021 9:10:33 PM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+WARNING: login attempt by test on 2021-05-11 04:10:33 UTC was invalid
+May 10, 2021 9:10:39 PM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+WARNING: login attempt by test on 2021-05-11 04:10:39 UTC was invalid
+May 10, 2021 9:10:42 PM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 04:10:42 UTC was successful
+mai 10, 2021 9:25:27 PM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 04:25:27 UTC was successful
+mai 10, 2021 9:26:23 PM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 04:26:23 UTC was successful
+mai 10, 2021 9:26:41 PM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 04:26:41 UTC was successful
+mai 11, 2021 7:58:03 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 14:58:03 UTC was successful
+mai 11, 2021 7:59:53 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 14:59:53 UTC was successful
+May 11, 2021 8:01:25 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 15:01:25 UTC was successful
+May 11, 2021 8:06:08 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 15:06:08 UTC was successful
+May 11, 2021 8:11:09 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 15:11:09 UTC was successful
+May 11, 2021 8:20:39 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 15:20:39 UTC was successful
+May 11, 2021 8:22:30 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 15:22:30 UTC was successful
+May 11, 2021 8:25:00 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 15:25:00 UTC was successful
+May 11, 2021 8:25:45 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 15:25:45 UTC was successful
+May 11, 2021 8:26:40 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 15:26:40 UTC was successful
+May 11, 2021 8:27:20 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-11 15:27:20 UTC was successful
+May 11, 2021 8:30:34 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+
+May 12, 2021 8:39:00 AM SchedulingApp.Helpers.LogHelper LogLoginAttempt
+INFO: login attempt by test on 2021-05-12 15:39:00 UTC was successful

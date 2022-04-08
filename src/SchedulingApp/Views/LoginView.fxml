@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="266.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.Controllers.LoginController">
+   <children>
+      <Label fx:id="userNameLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="17.0" layoutY="73.0" maxWidth="140.0" minWidth="140.0" prefHeight="17.0" text="%username" textAlignment="RIGHT" />
+      <Label fx:id="passwordLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="17.0" layoutY="109.0" maxWidth="140.0" minWidth="140.0" prefHeight="17.0" text="%password" textAlignment="RIGHT" />
+      <TextField fx:id="userNameText" layoutX="166.0" layoutY="69.0" />
+      <TextField fx:id="passwordText" layoutX="166.0" layoutY="106.0" />
+      <Button fx:id="loginButton" layoutX="243.0" layoutY="149.0" mnemonicParsing="false" onAction="#loginButton_OnAction" prefHeight="25.0" prefWidth="118.0" text="%loginbutton" />
+      <Button fx:id="exitButton" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" onAction="#exitButton_OnAction" prefHeight="17.0" prefWidth="90.0" text="%exitbutton" />
+      <Label fx:id="currentLocationLabel" layoutX="16.0" layoutY="190.0" text="Your current location; " AnchorPane.leftAnchor="16.0" />
+      <Label fx:id="formTitleLabel" layoutX="10.0" layoutY="14.0" text="%LoginViewTitle" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="myCurrentTime" layoutX="340.0" layoutY="14.0" text="currentTime" visible="false" />
+      <Label fx:id="startBusiness" layoutX="340.0" layoutY="58.0" text="startBusiness" visible="false" />
+      <Label fx:id="endBusiness" layoutX="340.0" layoutY="80.0" text="endBusiness" visible="false" />
+   </children>
+   <effect>
+      <DropShadow blurType="GAUSSIAN">
+         <color>
+            <Color red="0.2763157784938812" green="0.2763157784938812" blue="0.2763157784938812" />
+         </color>
+      </DropShadow>
+   </effect>
+</AnchorPane>

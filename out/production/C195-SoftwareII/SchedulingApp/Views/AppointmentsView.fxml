@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="554.0" prefWidth="1357.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.Controllers.AppointmentsController">
+   <children>
+
+       <TableView fx:id="appointmentTable" layoutX="209.0" layoutY="68.0" prefHeight="434.0" prefWidth="1118.0">
+           <placeholder>
+               <Label text="No appointments are in this table - If searching, try modifying or clearing your search" />
+           </placeholder>
+           <columns>
+               <TableColumn fx:id="columnAppointmentId" prefWidth="117.0" text="%AppointmentId" />
+               <TableColumn fx:id="columnAppointmentTitle" prefWidth="83.0" text="%Title" />
+               <TableColumn fx:id="columnAppointmentDescription" prefWidth="189.0" text="%Description" />
+               <TableColumn fx:id="columnAppointmentLocation" prefWidth="101.0" text="%Location" />
+               <TableColumn fx:id="columnAppointmentContactName" prefWidth="123.0" text="%Contact" />
+               <TableColumn fx:id="columnAppointmentType" prefWidth="111.0" text="%Type" />
+               <TableColumn fx:id="columnAppointmentStart" prefWidth="152.0" text="%StartDateAndTime" />
+               <TableColumn fx:id="columnAppointmentEnd" prefWidth="153.0" text="%EndDateAndTime" />
+               <TableColumn fx:id="columnAppointmentCustomerID" minWidth="0.0" prefWidth="88.0" text="%CustomerID" />
+           </columns>
+       </TableView>
+
+       <Button fx:id="addAppointmentButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="1039.0" layoutY="506.0" mnemonicParsing="false" onAction="#addAppointment_OnAction" text="%Add" textAlignment="RIGHT" />
+       <Button fx:id="deleteAppointmentButton" layoutX="521.0" layoutY="506.0" mnemonicParsing="false" onAction="#deleteAppointment_OnAction" text="%Delete" />
+       <Button fx:id="modifyAppointmentButton" layoutX="776.0" layoutY="506.0" mnemonicParsing="false" onAction="#modifyAppointment_OnAction" text="%Modify" />
+      <TableView fx:id="filterWeekMonthTable" layoutX="12.0" layoutY="161.0" prefHeight="283.0" prefWidth="163.0">
+        <columns>
+            <TableColumn fx:id="filterBySelector" prefWidth="64.0" text="" />
+            <TableColumn fx:id="appointmentCount" prefWidth="86.0" text="%Total" />
+        </columns>
+      </TableView>
+      <RadioButton fx:id="filterByMonth" layoutX="15.0" layoutY="101.0" mnemonicParsing="false" onAction="#filterBy_OnAction" selected="true" text="%ShowByMonth">
+         <toggleGroup>
+            <ToggleGroup fx:id="filterBy" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="filterByWeek" layoutX="15.0" layoutY="133.0" mnemonicParsing="false" onAction="#filterBy_OnAction" text="%ShowByWeek" toggleGroup="$filterBy" />
+      <RadioButton fx:id="filterShowAll" layoutX="15.0" layoutY="68.0" mnemonicParsing="false" onAction="#filterBy_OnAction" selected="true" text="%ShowAll" toggleGroup="$filterBy" />
+
+       <Button fx:id="cancelButton" layoutX="11.0" layoutY="519.0" mnemonicParsing="false" onAction="#cancel_OnAction" text="%CANCEL" />
+      <Label layoutX="29.0" layoutY="32.0" text="%AppointmentFilter" />
+      <Label layoutX="216.0" layoutY="32.0" text="%ApppointmentList" />
+      <Line endX="-79.0" endY="529.0" layoutX="271.0" layoutY="12.0" startX="-79.0" />
+      <Label layoutX="11.0" layoutY="452.0" prefHeight="54.0" prefWidth="163.0" text="%FilterInstructions" wrapText="true" />
+
+   </children>
+</AnchorPane>

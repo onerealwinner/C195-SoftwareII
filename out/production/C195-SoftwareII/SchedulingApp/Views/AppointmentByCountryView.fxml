@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="454.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.Controllers.AppointmentByCountryController">
+    <Button fx:id="cancelButton" layoutX="29.0" layoutY="415.0" mnemonicParsing="false" onAction="#cancel_OnAction" text="%CANCEL" />
+
+    <TableView fx:id="dataTable" layoutX="29.0" layoutY="24.0" prefHeight="381.0" prefWidth="346.0">
+        <columns>
+            <TableColumn fx:id="colCountry" prefWidth="188.0" text="%Country" />
+            <TableColumn fx:id="colTotal" prefWidth="72.0" text="%Total" />
+        </columns>
+    </TableView>
+
+</AnchorPane>

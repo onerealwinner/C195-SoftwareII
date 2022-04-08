@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="554.0" prefWidth="1357.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.Controllers.AppointmentsTreeController">
+   <children>
+
+       <TreeTableView fx:id="appointmentTable" layoutX="204.0" layoutY="25.0" prefHeight="431.0" prefWidth="1118.0">
+           <columns>
+               <TreeTableColumn fx:id="colAll" prefWidth="33.0" text="" />
+               <TreeTableColumn fx:id="colMonthOf" prefWidth="33.0" text="%Month" />
+               <TreeTableColumn fx:id="colWeekOf" prefWidth="33.0" text="%Week" />
+               <TreeTableColumn fx:id="columnAppointmentId" prefWidth="33.0" text="%Id" />
+               <TreeTableColumn fx:id="columnAppointmentTitle" prefWidth="167.0" text="%Title" />
+               <TreeTableColumn fx:id="columnAppointmentDescription" prefWidth="189.0" text="%Description" />
+               <TreeTableColumn fx:id="columnAppointmentLocation" prefWidth="101.0" text="%Location" />
+               <TreeTableColumn fx:id="columnAppointmentContactName" prefWidth="123.0" text="%ContactName" />
+               <TreeTableColumn fx:id="columnAppointmentType" prefWidth="111.0" text="%Type" />
+               <TreeTableColumn fx:id="columnAppointmentStart" prefWidth="130.0" text="%Start" />
+               <TreeTableColumn fx:id="columnAppointmentEnd" prefWidth="175.0" text="%End" />
+               <TreeTableColumn fx:id="columnAppointmentCustomerID" minWidth="0.0" prefWidth="88.0" text="%CustomerID" />
+           </columns>
+       </TreeTableView>
+
+       <Button fx:id="addAppointmentButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="1034.0" layoutY="463.0" mnemonicParsing="false" onAction="#addAppointment_OnAction" text="%Add" textAlignment="RIGHT" />
+       <Button fx:id="deleteAppointmentButton" layoutX="516.0" layoutY="463.0" mnemonicParsing="false" onAction="#deleteAppointment_OnAction" text="%Delete" />
+       <Button fx:id="modifyAppointmentButton" layoutX="771.0" layoutY="463.0" mnemonicParsing="false" onAction="#modifyAppointment_OnAction" text="%Modify" />
+
+
+      <Label fx:id="createdDate" layoutX="21.0" layoutY="454.0" text="Label" />
+      <TableView fx:id="filterWeekMonthTable" layoutX="10.0" layoutY="110.0" prefHeight="335.0" prefWidth="163.0">
+        <columns>
+            <TableColumn fx:id="filterBySelector" prefWidth="64.0" text="" />
+            <TableColumn fx:id="appointmentCount" prefWidth="86.0" text="%Total" />
+        </columns>
+      </TableView>
+      <RadioButton fx:id="filterByMonth" layoutX="19.0" layoutY="51.0" mnemonicParsing="false" onAction="#filterBy_OnAction" selected="true" text="%ShowByMonth">
+         <toggleGroup>
+            <ToggleGroup fx:id="filterBy" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="filterByWeek" layoutX="19.0" layoutY="83.0" mnemonicParsing="false" onAction="#filterBy_OnAction" text="%ShowByWeek" toggleGroup="$filterBy" />
+      <RadioButton fx:id="filterShowAll" layoutX="19.0" layoutY="25.0" mnemonicParsing="false" onAction="#filterBy_OnAction" selected="true" text="%ShowAll" toggleGroup="$filterBy" />
+
+       <Button fx:id="cancelButton" layoutX="21.0" layoutY="507.0" mnemonicParsing="false" onAction="#cancel_OnAction" text="%CANCEL" />
+
+   </children>
+</AnchorPane>
